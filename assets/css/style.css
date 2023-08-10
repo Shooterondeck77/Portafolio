@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+/*this what you see in the brower. lets you know what website your in*/
+header {
+    color: darkblue;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+
+}
+/*controlls the look for the top right where it says "timothytaffu"*/
+header h1 {
+    font-size: 50px;
+    background-color: lightblue;
+    width: 35%;
+}
+/* this controll the header and the nav bar*/
+header nav {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    padding: 20px;
+}
+/*this controls the links found in the header that take you to the info in the page*/
+header nav a {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+    padding-inline: 5px;
+    color: lightblue;
+
+
+}
+/*this controls the background img underthe first header*/
+.Second {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* this controlls the "welcome, i can code!" part on the top right8*/
+h2 {
+    text-align: right;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 80px;
+    color: lightblue;
+    font-size: 60px;
+
+}
+/* this the about me*/
+h3 {
+    float: left;
+    padding: 30px;
+    background-color: darkblue;
+    color: lightblue;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 25px;
+    justify-content: left;
+text-align: right;
+}
+/* this controlls the about me , work contact me and resume*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: right;
+}
+/*this is my side contant*/
+aside {
+    flex: 2;
+    padding: 5px;
+
+}
+
+section {
+    flex: 3;
+    background-color: #fff;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.SideContent {
+
+    width: 300px;
+    height: 50px;
+    border: 10px;
+    padding: 30px;
+}
+/* this controlls all the sections*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding: 0%;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding: 0%;
+    width: 50%;
+    float: left;
+}
+
+.container2 {
+    position:relative ;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding: 0%;
+    width: 50%;
+    float: right ;
+}
+/* this is the bigger img*/
+.img-1 {
+    width: 100%;
+    padding: 0%;
+}
+/* this the little box with text thats inside the img*/
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img-2 {
+    width: 100%;
+
+}
+
+.img-3 {
+    width: 100%;
+
+}
+
+.MainContent {
+    background-color: #fff;
+    padding: 20px;
+    display: block;
+
+}
+
+.MainContent ul li {
+    padding: 50px;
+    width: 15%;
+    justify-content: space-between;
+    display: inline-block;
+
+}
+
+div img {
+    width: 100%;
+    overflow: hidden;
+    max-width: 180px;
+
+}
+
+.Contactme {
+    justify-content: space-evenly;
+    font-size: large;
+word-spacing: 150px;
+padding: 30px;
+}
+
+.footer {
+font-size: medium;
+text-align: center;
+margin-bottom: 10px;
+background-color: black;
+color: #fff;
+}
+@media screen and (max-width: 768px) {
+
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main, h3 , 
+    nav {
+        flex-direction: column;
+    }
+    
+    h3 {
+flex-direction: column;
+
+    }
+    .Contactme {
+text-align: center;
+width: 10%;
+
+    }
+
+    /* Change the header background */
+    header {
+        background: black
+    }
+
+    /* Change the navbar and footer background */
+    nav,
+    .footer {
+        background-color: grey
+    }
+}
