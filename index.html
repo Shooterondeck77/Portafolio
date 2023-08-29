@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Timothys Portafilo</title>
 </head>
 <body>
@@ -23,22 +25,27 @@
 
 <main>
 
- <h3>About Me </h3>
+ <h3 class=".fs-2 text-light">About Me </h3>
 
  <section id="aboutme">
   <p>Hello, my name is Timothy Taffur. I am 24 year old living in Toronto, I was born in Colombia and my mother and I immigrated to Cananda when I was three and we have been ever since. I am new to the whole website and coding gig but eager to learn and grow in my education. I am in with love music and I play drums and guitar with a band. Tech has always been something I have been interested in and I think this bootcamp would be a good foot in the door to get into the industy of technology. </p>
 </section>
 
-<aside class="left" id="work">
+<aside class="left .fs-2 text-light" id="work">
 <h3>Work</h3>
 </aside>
 
 <aside class="right"> 
     <section class="container">
-<img class="img-1" src="./assets/images/alexandre-debieve-FO7JIlwjOtU-unsplash (2) (1).jpg" alt="img of coding">
+<img class="img-1" src="./assets/images/RenderedImage.jpg" alt="img of coding">
 <div class="bottom-left">
-    <h4>Computer</h4>
-    <p>HTML</p>
+    <div class="d-grid gap-2 col-12 mx-auto">
+    <button type="button" class="btn btn-outline-primary" id="myBtn">Cocktail & Courage</button>
+    </div>
+    <p>HTML, CSS, JS
+        Bootstrap 
+        Server side API
+        </p>
 </div>
 </section>
 
@@ -59,11 +66,11 @@
         </section>
     </aside>
 <aside class="left" >
-<h3>Contact me</h3>
+<h3 class=".fs-2 text-light">Contact me</h3>
 </aside>
 
 <aside class="right" id="contact">
-<section class="Contactme" > 
+<section class="Contactme bg-body-secondary" > 
 <ul>
     <a id="Contactme" href="https://www.tiomthytaffur@gmail.com">timothytaffu@gmail.com</a>
     <a id="Contactme" href="https://github.com/Shooterondeck77.com"> GitHub</a>
@@ -83,6 +90,6 @@
 </div>
 
 
-
+<script src="./assets/script.js" ></script>
 </body>
 </html>
