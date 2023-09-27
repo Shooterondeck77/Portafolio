@@ -8,6 +8,6 @@ document.getElementById("myBtn").addEventListener("click", function() {
 
 
 document.getElementById("myBtn2").addEventListener("click", function() {
-  window.location.href = "https://github.com/Shooterondeck77/sportstash"
+  window.location.href = "https://sportstash-6f44bb76cc11.herokuapp.com/"
 
 });
